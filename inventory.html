@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsiive Admin Dashboard | CodingLab</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+        < script src = 'https://kit.fontawesome.com/a076d05399.js'
+        crossorigin = 'anonymous' >
+    </script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://kit.fontawesome.com/4a58583c66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/4a58583c66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-w	idth, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form .input-field input[type=text]:focus+label {
+            color: #000;
+        }
+
+        .form .input-field input[type=password]:focus+label {
+            color: #000;
+        }
+
+        /* label color */
+        .form .input-field label {
+            color: black;
+        }
+
+        /* label underline focus color */
+        .form .input-field input[type=text]:focus {
+            border-bottom: 1px solid black;
+            box-shadow: 0 1px 0 0 black;
+        }
+
+        .form .input-field input[type=password]:focus {
+            border-bottom: 1px solid black;
+            box-shadow: 0 1px 0 0 black;
+        }
+
+        .form .radio-field input[type=radio]:focus {
+            color: black;
+        }
+
+        .container {
+            margin-top: 0px;
+            padding-top: 15vh;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .container .form h2 {
+            text-align: center;
+            font-size: 30px;
+            padding-top: 0px;
+        }
+
+        .container .form h4 {
+            text-align: center;
+            font-size: 20px;
+            padding-top: 0px;
+        }
+
+        .container .form {
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-top: 5px;
+            overflow-y: scroll;
+            height: 600px;
+        }
+        .container .form::-webkit-scrollbar {
+            display: none;
+        }
+
+        .con {
+            text-align: center;
+        }
+        .con1 {
+            text-align: center;
+            z-index: 1009;
+            position: sticky;
+            top: 0%;
+            background-color: white;
+            /* height: 100px; */
+            padding-top: -100px;
+        }
+
+        #btn {
+
+            padding-right: 6px;
+            padding-left: 6px;
+            padding-bottom: 6px;
+            color: white;
+            margin-bottom: 10px;
+            font-size: 16px;
+            margin-top: 30px;
+            background-color: #FFAB00;
+        }
+
+        #btnstock {
+            padding-right: 6px;
+            padding-left: 6px;
+            padding-bottom: 6px;
+            color: white;
+            margin-bottom: 10px;
+            font-size: 16px;
+            margin-top: 30px;
+            background-color: #FFAB00;
+        }
+
+        @media (max-width: 400px) {
+            #btn {
+                padding-right: 6px;
+                padding-left: 6px;
+                padding-top: 2px;
+                display: inline-block;
+                color: white;
+                margin-bottom: 20px;
+                font-size: 11px;
+                background-color: #FFAB00;
+            }
+    </style>
+</head>
+<div class="sidebar">
+    <div class="logo-details">
+        <img src="./images/logo.png" alt=""> <span class="logo_name">jmjbooks</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.jsp"> <i class="fa fa-home" aria-hidden="true"></i> <span class="links_name">Home</span>
+            </a></li>
+        <li><a href="Dashboard.jsp"> <i class="fa fa-desktop" aria-hidden="true"></i> <span
+                    class="links_name">Dashboard</span>
+            </a></li>
+        <li><a href="Reports.jsp"> <i class="  fas fa-file-alt" aria-hidden="true"></i> <span
+                    class="links_name">Report's</span>
+            </a></li>
+        <li><a href="Category.jsp"> <i class="fa-solid fa-shapes"></i>
+                <span class="links_name">Add Category</span>
+            </a></li>
+        <li><a href="Inventroy.jsp"> <i class="	fas fa-scroll"></i>
+                <span class="links_name">Add Inventroy</span>
+            </a></li>
+        <li><a href="UserReport.jsp"> <i class="	fas fa-file-alt" aria-hidden="true"></i> <span
+                    class="links_name">User's
+                    Report</span>
+            </a></li>
+        <li><a href="AddUser.jsp"> <i class="fa fa-user-plus" aria-hidden="true"></i> <span class="links_name">Add
+                    User</span>
+            </a></li>
+        <li class="log_out"><a href="SignOut.jsp"> <i class='bx bx-log-out'></i> <span class="links_name">Sign
+                    out</span>
+            </a></li>
+    </ul>
+</div>
+<section class="home-section">
+    <nav>
+        <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i> <span class="dashboard">Add Category</span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col m12 offset">
+                <div class="card">
+                    <div class="form ">
+                        
+                        <form>
+                            <div class="con1">
+                                <h2><b>Add Inventory</b></h2>
+                                <a href="Inventroy.jsp" id="btn" class="btn" style="margin-left: 17px">Add Inventory
+                                </a>
+                                <a href="edit_inventry.jsp" id="btn" class="btn" style="margin-left: 17px">Edit
+                                    Inventory </a>
+                            </div>
+                            <div class=" col s12">
+                                <label> Select Category1</label> <select>
+                                    <option value="" disabled selected>Select item</option>
+                                    <option value="1">Mango</option>
+                                    <option value="2">Orange</option>
+                                    <option value="3">Apple</option>
+                                </select>
+                            </div>
+                            <div class=" col s12">
+                                <label>Select Category2</label> <select>
+                                    <option value="" disabled selected>Select item</option>
+                                    <option value="1">Mango</option>
+                                    <option value="2">Orange</option>
+                                    <option value="3">Apple</option>
+                                </select>
+                            </div>
+                            <div class=" col s12">
+                                <label>Select Category3</label> <select>
+                                    <option value="" disabled selected>Select item</option>
+                                    <option value="1">Mango</option>
+                                    <option value="2">Orange</option>
+                                    <option value="3">Apple</option>
+                                </select>
+                            </div>
+                            <div class=" col s12">
+                                <label>Select Category4</label> <select>
+                                    <option value="" disabled selected>Select item</option>
+                                    <option value="1">Mango</option>
+                                    <option value="2">Orange</option>
+                                    <option value="3">Apple</option>
+                                </select>
+                            </div>
+                            <div class="input-field col s12  ">
+                                <input placeholder="Name" id="name" type="text" class="validate">
+                                <label for="name"> Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="path" id="path" type="text" class="validate"> <label for="path">Path
+                                </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="code" id="code" type="text" class="validate"> <label
+                                    for="code">Code</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="barcode" id="barcode" type="text" class="validate"> <label
+                                    for="barcode">Barcode
+                                </label>
+                            </div>
+                            <div class="input-field col s12  ">
+                                <input placeholder="rack_no" id="rack_no" type="text" class="validate">
+                                <label for="rack_no"> Rack No</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="godown_rack_no" id="godown_rack_no" type="text" class="validate">
+                                <label for="godown_rack_no">Godown Rack No</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="mrp" id="mrp" type="text" class="validate"> <label
+                                    for="mrp">MRP</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Sale_Discount" id="Sale_Discount" type="text" class="validate">
+                                <label for="Sale_Discount">Sale Discount
+                                </label>
+                            </div>
+                            <div class="input-field col s12  ">
+                                <input placeholder="Sale_Price" id="Sale_Price" type="text" class="validate">
+                                <label for="Sale_Price"> Sale Price</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Purchase_Discount " id="Purchase_Discount" type="text"
+                                    class="validate"> <label for="Purchase_Discount">Purchase Discount
+                                </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="Purchase_Price" id="Purchase_Price" type="text" class="validate">
+                                <label for="Purchase_Price">Purchase Price</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="stock " id="stock" type="text" class="validate"> <label
+                                    for="stock">Stock
+                                </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input placeholder="unit" id="unit" type="text" class="validate"> <label for="unit">
+                                    Unit</label>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <p>
+                                        <input id="new" type="radio" name="type" value="new" checked> <label
+                                            for="admin">New</label>
+                                    </p>
+                                    <p>
+                                        <input id="old" type="radio" name="type" value="old" checked>
+                                        <label for="old">Old </label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="con">
+                                <button id="btn" class="btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<body>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script>
+</body>
+
+</html>
