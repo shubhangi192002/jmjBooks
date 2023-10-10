@@ -1,3 +1,4 @@
+/* Googlefont Poppins CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -5,9 +6,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-/* body::-webkit-scrollbar{
-  display: none;
-} */
+body::-webkit-scrollbar{
+   display:none;	
+}
 .sidebar{
   position: fixed;
   height: 100%;
@@ -86,19 +87,19 @@
   bottom: 0;
   width: 100%;
 }
-.home-section{
-  position: relative;
-  background: #fff;
-  min-height: 100vh;
-  width: calc(100% - 240px);
-  left: 240px;
-  transition: all 0.5s ease;
+.home-section {
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    transition: all 0.5s ease;
 }
 .sidebar.active ~ .home-section{
   width: calc(100% - 0px);
   left: 0px;
 }
-.home-section nav {
+.home-section nav{
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -108,12 +109,11 @@
   position: fixed;
   width: calc(100% - 240px);
   left: 240px;
-  z-index: 999;
+  z-index: 9999;
   padding: 0 20px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
 }
-
 .sidebar.active ~ .home-section nav{
   left: 0px;
   width: calc(100% - 0px);
@@ -131,9 +131,6 @@ nav .sidebar-button i{
   margin-right: 10px;
     color:black;
 }
-​
-​
-​
 ​
 ​
 /* Responsive Media Query */
@@ -510,3 +507,231 @@ cursor: pointer;
         margin-right: 10px; /* Add spacing between inputs */
     }
         }
+
+
+        .user-profile {
+          padding: 30px;
+          padding-left:60px;
+      }
+      .form .btn{
+          background-color: #26a69a;
+          
+          cursor: pointer;
+          margin-bottom: 15px;
+          text-align: center;
+          color: #fff;
+      }
+      .form h2{
+         
+          padding-top:20px;
+      }
+      .edit-btn{
+          outline: none;
+          border: none;
+      }
+      .fa-edit{
+          font-size: 20px;
+      }
+      .form-check-label{
+          color: #000;
+      }
+      @media (max-width:400px){
+          .form{
+              padding-top: 10%;
+          }
+      }
+      @media (max-width:670px){
+          .form{
+              padding-top: 8%;
+          }
+      }
+      @media (max-width:484px){
+          .form{
+              padding-top: 10%;
+          }
+      }
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      ​
+      .rHeading{
+          text-align: center;
+          margin-top: 10%;
+      }
+      .container-fluid {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+      h3 {
+          text-align: center;
+      }
+      /* Add responsiveness for date inputs and search button */
+      .date-row {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 20px;
+      }
+      .date-row input[type="date"] {
+          width: 25%;
+          padding: 5px;
+          font-size: 20px;
+      }
+      .date-row .reportBtn {
+          width: 50px;
+          height: 50px;
+          background: #FFA751;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 20px;
+      }
+      /* Add custom styling for option containers */
+      .options{
+          display:grid;
+          grid-template-columns:auto auto auto;
+          gap:10px;
+      }
+      .option h2 {
+          font-size: 15px;
+          margin-bottom: 10px;
+      }
+      .option p {
+          font-size: 15px;
+          font-weight: bold;
+          margin: 0;
+      }
+      /* Add custom styling for the download button */
+      .download-btn {
+          position: fixed;
+          bottom: 40px;
+          right: 40px;
+          background-color: #FFA751;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 50%;
+          height: auto;
+          font-size: 20px;
+      }
+      /* Media query for mobile view */
+      @media screen and (max-width: 768px) {
+      .date-row {
+      flex-direction: row; /* Arrange in one row */
+      justify-content: flex-start; /* Align items to the start of the row */
+      align-items: center; /* Center vertically */
+      }
+      .date-row input[type="date"] {
+      width: 40%; /* Adjust width as needed */
+      padding: 10px; /* Add padding for touch-friendly buttons */
+      border-radius: 5px; /* Add rounded corners */
+      margin-right: 10px; /* Add spacing between inputs */
+      }
+      .date-row button.reportBtn {
+      width: 20%; /* Adjust width as needed */
+      padding: 10px 15px; /* Add padding for touch-friendly buttons */
+      color: #fff; /* Change text color */
+      border: none;
+      border-radius: 5px; /* Add rounded corners */
+      cursor: pointer;
+      }
+      }
+      /* Add responsiveness for date inputs and search button */
+      /* Add custom styling for option containers */
+      .option {
+          background-color: #F5F5F5;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      .option h2 {
+          font-size: 18px;
+          margin-bottom: 10px;
+      }
+      .option p {
+          font-size: 24px;
+          font-weight: bold;
+          margin: 0;
+      }
+      /* Add custom styling for the download button */
+      .download-btn {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #007BFF;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-align: center;
+          cursor: pointer;
+      }
+      /* Media query for responsiveness on smaller screens */
+      @media screen and (max-width: 768px) {
+          .date-row {
+              flex-direction: column;
+              align-items: center;
+          }
+          .date-row input[type="date"],
+          .date-row button {
+              width: 100%;
+          }
+          /* Arrange the options in a single row with three elements each */
+          .options {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+          }
+          .option {
+              width: calc(33.33% - 10px);
+          }
+      }
+              /* Media query for responsiveness on smaller screens */
+              @media screen and (max-width: 780px) {
+                  .rHeading{
+                      margin-top: 15%;
+                  }
+                  .date-row input[type="date"],
+                  .date-row button {
+                      width: 100%;
+                  }
+                  /* Arrange the options in a single row with three elements each */
+                  .options {
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                  }
+                  .option {
+                      width: calc(33.33% - 10px);
+                  }
+              }
+              @media screen and (max-width:570px){
+                  .rHeading{
+                      margin-top: 20%;
+                  }
+              }
+              @media screen and (max-width:400px){
+                  .date-row input[type="date"] {
+              width: 40%; /* Adjust width as needed */
+              padding: 10px; /* Add padding for touch-friendly buttons */
+              border-radius: 5px; /* Add rounded corners */
+              margin-right: 10px; /* Add spacing between inputs */
+          }
+              }
